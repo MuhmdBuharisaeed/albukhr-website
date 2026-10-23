@@ -1,0 +1,84 @@
+/* ALBUKHR brand color alignment.
+   Load this AFTER assets/styles.css in index.html.
+   Palette drawn from the existing ALBUKHR app UI: green #0F7A3D,
+   pale green #F4FFF8 and #E6F4EC, with dark forest green. */
+
+:root{
+  --ink:#064e2b;
+  --gold:#0f7a3d;
+  --gold-light:#c8f2de;
+  --paper:#f4fff8;
+  --text:#17231b;
+  --line:#d8e9df;
+}
+body{background:var(--paper);color:var(--text)}
+.site-header{background:rgba(15,122,61,.98);border-bottom-color:rgba(255,255,255,.16)}
+.brand-mark{border-color:#c8f2de;color:#fff;background:rgba(255,255,255,.04)}
+.brand-copy small{color:#d7f4e4}
+.site-nav{color:#f1fff6}
+.site-nav a:hover{color:#c8f2de}
+.site-nav .nav-cta{border-color:#c8f2de;color:#fff}
+.menu-toggle{border-color:#a8dfc0}
+.menu-icon,.menu-icon:before,.menu-icon:after{background:#fff}
+.hero{background:linear-gradient(135deg,#064e2b 0%,#0f7a3d 64%,#09562f 100%)}
+.hero-glow.glow-one{background:#c8f2de14}
+.hero-glow.glow-two{background:#ffffff0d}
+.orbit{border-color:#c8f2de35}
+.visual-core{border-color:#c8f2de;background:radial-gradient(circle at 35% 25%,#167d4b,#064e2b 72%);box-shadow:0 0 0 12px #c8f2de0a,0 0 60px #042f1b40}
+.core-symbol,.core-caption{color:#f4fff8}
+.orbit-node{background:#073d24;border-color:#4ca777}
+.orbit-node span{color:#c8f2de}
+.orbit-node b{color:#fff}
+.visual-label{color:#d7f4e4}
+.hero-bottom{border-top-color:#ffffff2b}
+.hero-bottom-inner{color:#d7f4e4}
+.bottom-separator,.eyebrow{color:#c8f2de}
+.eyebrow-line{background:#c8f2de}
+.button-primary{background:#c8f2de;color:#064e2b}
+.button-primary:hover{background:#fff}
+.button-quiet{border-color:#b1dfc5;color:#fff}
+.button-quiet:hover{border-color:#fff;background:#ffffff0b}
+.status-dot{background:#c8f2de;box-shadow:0 0 0 4px #c8f2de25}
+.intro,.documents-section,.contact-section{background:#fff}
+.eyebrow-dark{color:#0f7a3d}
+.intro h2 em,.contact-panel h2 em{color:#0f7a3d}
+.text-link{color:#0f7a3d}
+.focus-section{background:#f4fff8}
+.focus-card{border-color:#d8e9df}
+.focus-card-featured{background:#0f7a3d;border-color:#0f7a3d}
+.card-number{color:#0f7a3d}
+.card-icon{border-color:#b7dfc8;color:#0f7a3d;background:#f4fff8}
+.focus-card-featured .card-icon{border-color:#b7dfc8;background:#ffffff0d;color:#c8f2de}
+.focus-card h3{color:#064e2b}
+.focus-card-featured h3{color:#fff}
+.focus-card p{color:#53665a}
+.focus-card-featured p{color:#e0f5e8}
+.focus-card>a{color:#0f7a3d}
+.focus-card-featured>a{color:#c8f2de}
+.principles-section{background:linear-gradient(135deg,#064e2b,#0f7a3d);color:#fff}
+.principle-index{color:#c8f2de}
+.principles-list article{border-bottom-color:#ffffff2b}
+.principles-list p{color:#d7eee0}
+.document-list,.document-item{border-color:#d8e9df}
+.document-type,.document-arrow{color:#0f7a3d}
+.document-item strong{color:#064e2b}
+.document-desc{color:#53665a}
+.documents-note{color:#66786c}
+.contact-panel{background:#e6f4ec}
+.contact-side{border-left-color:#b7d9c4}
+.contact-mark{border-color:#0f7a3d;color:#0f7a3d}
+.contact-label,.contact-small{color:#53665a}
+.contact-domain{color:#064e2b}
+.disclaimer{background:#f4fff8}
+.disclaimer strong{color:#0f7a3d}
+.disclaimer p{color:#53665a}
+.site-footer{background:#06391f;color:#d7eee0}
+.brand-footer .brand-mark{border-color:#c8f2de;color:#fff}
+.footer-main>p{color:#d7eee0}
+.back-top{color:#c8f2de}
+.footer-bottom{border-top-color:#ffffff2b;color:#b9ddc8}
+@media(max-width:850px){
+  .site-nav{background:#0f7a3d;border-bottom-color:#ffffff2b}
+  .site-nav a{border-bottom-color:#ffffff20}
+  .contact-side{border-top-color:#b7d9c4}
+}
