@@ -82,3 +82,144 @@ body{background:var(--paper);color:var(--text)}
   .site-nav a{border-bottom-color:#ffffff20}
   .contact-side{border-top-color:#b7d9c4}
 }
+
+
+/* =========================================================
+   ALBUKHR MEDIA & OFFICIAL PUBLIC CHANNELS
+   Append to assets/brand-overrides.css
+   ========================================================= */
+
+.media-section {
+  background: #f4fff8;
+}
+
+.media-section .section-heading {
+  margin-bottom: 36px;
+}
+
+.media-section .section-heading h2 em {
+  color: #0f7a3d;
+  font-style: normal;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.media-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #d8e9df;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(6, 78, 43, 0.035);
+  transition: border-color .2s ease, transform .2s ease,
+              box-shadow .2s ease;
+}
+
+.media-card:hover {
+  border-color: #0f7a3d;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(6, 78, 43, 0.09);
+}
+
+.media-card:focus-visible {
+  outline: 3px solid #0f7a3d;
+  outline-offset: 4px;
+}
+
+.media-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 54px;
+  width: 54px;
+  height: 54px;
+}
+
+.media-icon svg {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.media-telegram { color: #229ed9; }
+.media-whatsapp { color: #25a75a; }
+.media-facebook { color: #1877f2; }
+.media-youtube { color: #e62117; }
+
+.media-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.media-card-copy strong {
+  color: #064e2b;
+  font: 23px/1.2 Georgia, "Times New Roman", serif;
+}
+
+.media-card-copy small {
+  color: #53665a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.media-arrow {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  color: #0f7a3d;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.media-note {
+  max-width: 850px;
+  margin: 24px 0 0;
+  color: #53665a;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .media-card {
+    gap: 14px;
+    padding: 17px;
+  }
+
+  .media-icon {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .media-icon svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .media-card-copy strong {
+    font-size: 21px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-card {
+    transition: none;
+  }
+
+  .media-card:hover {
+    transform: none;
+  }
+}
